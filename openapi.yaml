@@ -1,0 +1,78 @@
+openapi: 3.0.4
+info:
+  title: IFSC Lookup
+  description: IFSC Lookup is a simple tool for getting information on IFSC codes. It returns information on various IFSC codes.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/ifsclookup:
+    get:
+      summary: Get IFSC Code Information
+      description: IFSC Lookup is a simple tool for getting information on IFSC codes. It returns information on various IFSC codes.
+      operationId: ifsclookup
+      parameters:
+      - name: ifsc
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The IFSC code to get information about
+        example: SBIN0005943
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  bank: State Bank of India
+                  ifsc: SBIN0005943
+                  branch: KASTURBA GANDHI MARG,NEW DELHI
+                  address: 23, HIMALAYA HOUSE KASTURBA GANDHI MARG NEW DELHI ,PIN - 110001
+                  contact: ''
+                  city: NEW DELHI
+                  district: NEW DELHI
+                  state: DELHI
+                  imps: true
+                  rtgs: true
+                  neft: true
+                  upi: true
+                  micr: '110002062'
+                  swift: ''
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
