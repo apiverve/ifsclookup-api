@@ -1,32 +1,36 @@
 openapi: 3.0.4
 info:
   title: IFSC Lookup
-  description: IFSC Lookup is a simple tool for getting information on IFSC codes. It returns information on various IFSC codes.
+  description: >-
+    IFSC Lookup is a simple tool for getting information on IFSC codes. It
+    returns information on various IFSC codes.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/ifsclookup:
     get:
       summary: Get IFSC Code Information
-      description: IFSC Lookup is a simple tool for getting information on IFSC codes. It returns information on various IFSC codes.
+      description: >-
+        IFSC Lookup is a simple tool for getting information on IFSC codes. It
+        returns information on various IFSC codes.
       operationId: ifsclookup
       parameters:
-      - name: ifsc
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The IFSC code to get information about
-        example: SBIN0005943
+        - name: ifsc
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The IFSC code to get information about
+          example: SBIN0005943
       responses:
         '200':
           description: Successful Response
@@ -42,16 +46,15 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   bank: State Bank of India
                   ifsc: SBIN0005943
                   branch: KASTURBA GANDHI MARG,NEW DELHI
-                  address: 23, HIMALAYA HOUSE KASTURBA GANDHI MARG NEW DELHI ,PIN - 110001
                   contact: ''
                   city: NEW DELHI
                   district: NEW DELHI
@@ -67,7 +70,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -75,4 +78,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
