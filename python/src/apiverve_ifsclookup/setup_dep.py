@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='apiverve_ifsclookup',
-    version='1.1.12',
+    version='1.1.13',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -12,7 +12,7 @@ setup(
     description='IFSC Lookup is a simple tool for getting information on IFSC codes. It returns information on various IFSC codes.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com',
+    url='https://apiverve.com/marketplace/ifsclookup?utm_source=pypi&utm_medium=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
