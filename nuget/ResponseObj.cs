@@ -66,7 +66,6 @@ namespace APIVerve.API.IFSCLookup
         public bool Upi { get; set; }
 
         [JsonProperty("micr")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Micr { get; set; }
 
         [JsonProperty("swift")]
