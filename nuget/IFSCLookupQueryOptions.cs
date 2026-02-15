@@ -12,7 +12,6 @@ namespace APIVerve.API.IFSCLookup
     {
         /// <summary>
         /// The IFSC code to get information about
-        /// Example: SBIN0005943
         /// </summary>
         [JsonProperty("ifsc")]
         public string Ifsc { get; set; }
