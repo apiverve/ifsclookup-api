@@ -10,20 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_ifsclookup',
-    version='1.1.12',
+    version='1.1.13',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
     description='IFSC Lookup is a simple tool for getting information on IFSC codes. It returns information on various IFSC codes.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com',
-    project_urls={
-        'Homepage': 'https://apiverve.com',
-        'Documentation': 'https://docs.apiverve.com/ref/ifsclookup',
-        'Source': 'https://github.com/apiverve/ifsclookup-api',
-        'Bug Tracker': 'https://github.com/apiverve/ifsclookup-api/issues'
-    },
+    url='https://apiverve.com/marketplace/ifsclookup?utm_source=pypi&utm_medium=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
