@@ -229,8 +229,9 @@ from apiverve_ifsclookup.apiClient import IfsclookupAPIClient
 
 api = IfsclookupAPIClient("[YOUR_API_KEY]")
 
+query = { "ifsc": "SBIN0005943" }
+
 try:
-    query = { "ifsc": "SBIN0005943" }
     result = api.execute(query)
     print(result)
 finally:
