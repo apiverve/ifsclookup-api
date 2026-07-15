@@ -125,7 +125,6 @@ async function makeRequest() {
     "bank": "State Bank of India",
     "ifsc": "SBIN0005943",
     "branch": "KASTURBA GANDHI MARG,NEW DELHI",
-    "address": "23, HIMALAYA HOUSE KASTURBA GANDHI MARG NEW DELHI ,PIN - 110001",
     "contact": "",
     "city": "NEW DELHI",
     "district": "NEW DELHI",
