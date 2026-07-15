@@ -4,29 +4,40 @@ declare module '@apiverve/ifsclookup' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface ifsclookupResponse {
     status: string;
     error: string | null;
     data: IFSCLookupData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface IFSCLookupData {
-      bank:     string;
-      ifsc:     string;
-      branch:   string;
-      address:  string;
-      contact:  string;
-      city:     string;
-      district: string;
-      state:    string;
-      imps:     boolean;
-      rtgs:     boolean;
-      neft:     boolean;
-      upi:      boolean;
-      micr:     string;
-      swift:    string;
+      bank:     null | string;
+      ifsc:     null | string;
+      branch:   null | string;
+      contact:  null | string;
+      city:     null | string;
+      district: null | string;
+      state:    null | string;
+      imps:     boolean | null;
+      rtgs:     boolean | null;
+      neft:     boolean | null;
+      upi:      boolean | null;
+      micr:     null | string;
+      swift:    null | string;
   }
 
   export default class ifsclookupWrapper {
