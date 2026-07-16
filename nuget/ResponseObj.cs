@@ -25,6 +25,9 @@ namespace APIVerve.API.IFSCLookup
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -37,9 +40,6 @@ namespace APIVerve.API.IFSCLookup
 
         [JsonProperty("branch")]
         public string Branch { get; set; }
-
-        [JsonProperty("address")]
-        public string Address { get; set; }
 
         [JsonProperty("contact")]
         public string Contact { get; set; }
@@ -54,21 +54,33 @@ namespace APIVerve.API.IFSCLookup
         public string State { get; set; }
 
         [JsonProperty("imps")]
-        public bool Imps { get; set; }
+        public bool? Imps { get; set; }
 
         [JsonProperty("rtgs")]
-        public bool Rtgs { get; set; }
+        public bool? Rtgs { get; set; }
 
         [JsonProperty("neft")]
-        public bool Neft { get; set; }
+        public bool? Neft { get; set; }
 
         [JsonProperty("upi")]
-        public bool Upi { get; set; }
+        public bool? Upi { get; set; }
 
         [JsonProperty("micr")]
-        public long Micr { get; set; }
+        public long? Micr { get; set; }
 
         [JsonProperty("swift")]
         public string Swift { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
