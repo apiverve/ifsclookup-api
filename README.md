@@ -191,11 +191,40 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the IFSC Lookup API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0005943",
+    "branch": "KASTURBA GANDHI MARG,NEW DELHI",
+    "contact": "",
+    "city": "NEW DELHI",
+    "district": "NEW DELHI",
+    "state": "DELHI",
+    "imps": true,
+    "rtgs": true,
+    "neft": true,
+    "upi": true,
+    "micr": "110002062",
+    "swift": ""
+  }
 }
 ```
 
