@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/ifsclookup",
+    "description": "IFSC Lookup is a simple tool for getting information on IFSC codes. It returns information on various IFSC codes.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "ifsclookup",
+        "ifsc lookup",
+        "ifsc lookup api",
+        "ifsc lookup tool",
+        "ifsc lookup software",
+        "ifsc lookup service"
+    ],
+    "homepage": "https://apiverve.com/marketplace/ifsclookup?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/ifsclookup",
+        "source": "https://github.com/apiverve/ifsclookup-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Ifsclookup\\": "php/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Ifsclookup\\Tests\\": "php/tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
