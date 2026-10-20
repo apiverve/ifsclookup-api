@@ -1,13 +1,13 @@
-# [IFSC Lookup API](https://apiverve.com/marketplace/ifsclookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [IFSC Lookup API](https://apiverve.com/marketplace/ifsclookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-IFSC Lookup is a simple tool for getting information on IFSC codes. It returns information on various IFSC codes.
+IFSC Lookup is an IFSC code search API that verifies Indian bank branch details from any IFSC code, returning the bank name, branch, street address, and district. It confirms city and state records, while paid plans add transfer modes like NEFT and UPI.
 
 The IFSC Lookup API provides a simple, reliable way to integrate ifsc lookup functionality into your applications. Built for developers who need production-ready ifsc lookup capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/ifsclookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/ifsclookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/ifsclookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/ifsclookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/ifsclookup-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [IFSC Lookup API](https://apiverve.com/marketplace/ifsclookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [IFSC Lookup API](https://apiverve.com/marketplace/ifsclookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/ifsclookup](https://docs.apiverve.com/ref/ifsclookup)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -214,6 +214,7 @@ A real response from the IFSC Lookup API:
     "bank": "State Bank of India",
     "ifsc": "SBIN0005943",
     "branch": "KASTURBA GANDHI MARG,NEW DELHI",
+    "address": "23, HIMALAYA HOUSE KASTURBA GANDHI MARG NEW DELHI ,PIN - 110001",
     "contact": "",
     "city": "NEW DELHI",
     "district": "NEW DELHI",
@@ -232,7 +233,7 @@ A real response from the IFSC Lookup API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [IFSC Lookup API](https://apiverve.com/marketplace/ifsclookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [IFSC Lookup API](https://apiverve.com/marketplace/ifsclookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
