@@ -1,13 +1,12 @@
-IFSCLookup API
+IFSC Lookup API
 ============
 
-IFSC Lookup is a simple tool for getting information on IFSC codes. It returns information on various IFSC codes.
+IFSC Lookup is an IFSC code search API that verifies Indian bank branch details from any IFSC code, returning the bank name, branch, street address, and district. It confirms city and state records, while paid plans add transfer modes like NEFT and UPI.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [IFSCLookup API](https://apiverve.com/marketplace/ifsclookup?utm_source=nuget&utm_medium=readme)
+[![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.IFSCLookup.svg)](https://www.nuget.org/packages/APIVerve.API.IFSCLookup)
+
+This is a .NET wrapper for the [IFSC Lookup API](https://apiverve.com/marketplace/ifsclookup?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -40,8 +39,8 @@ From within Visual Studio:
 
 ## Configuration
 
-Before using the ifsclookup API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=readme)
+Before using the IFSC Lookup API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -61,8 +60,8 @@ class Program
         var apiClient = new IFSCLookupAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new IFSCLookupQueryOptions {
-    Ifsc = "SBIN0005943"
-};
+            Ifsc = "SBIN0005943"
+        };
 
         // Make the API call
         try
@@ -92,13 +91,13 @@ class Program
 
 ## Usage
 
-The IFSCLookup API documentation is found here: [https://docs.apiverve.com/ref/ifsclookup](https://docs.apiverve.com/ref/ifsclookup?utm_source=nuget&utm_medium=readme).
+The IFSC Lookup API documentation is found here: [https://docs.apiverve.com/ref/ifsclookup](https://docs.apiverve.com/ref/ifsclookup?utm_source=nuget&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-IFSCLookup API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+IFSC Lookup API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```csharp
 // Create an instance of the API client
@@ -125,8 +124,8 @@ public class Example
         var apiClient = new IFSCLookupAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new IFSCLookupQueryOptions {
-    Ifsc = "SBIN0005943"
-};
+            Ifsc = "SBIN0005943"
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -157,8 +156,8 @@ public class Example
         var apiClient = new IFSCLookupAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new IFSCLookupQueryOptions {
-    Ifsc = "SBIN0005943"
-};
+            Ifsc = "SBIN0005943"
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -194,8 +193,8 @@ public class Example
         var apiClient = new IFSCLookupAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new IFSCLookupQueryOptions {
-    Ifsc = "SBIN0005943"
-};
+            Ifsc = "SBIN0005943"
+        };
 
         try
         {
@@ -250,8 +249,8 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new IFSCLookupQueryOptions {
-    Ifsc = "SBIN0005943"
-};
+            Ifsc = "SBIN0005943"
+        };
 
         try
         {
@@ -370,6 +369,7 @@ using (var apiClient = new IFSCLookupAPIClient("[YOUR_API_KEY]"))
     "bank": "State Bank of India",
     "ifsc": "SBIN0005943",
     "branch": "KASTURBA GANDHI MARG,NEW DELHI",
+    "address": "23, HIMALAYA HOUSE KASTURBA GANDHI MARG NEW DELHI ,PIN - 110001",
     "contact": "",
     "city": "NEW DELHI",
     "district": "NEW DELHI",
@@ -388,7 +388,7 @@ using (var apiClient = new IFSCLookupAPIClient("[YOUR_API_KEY]"))
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -399,12 +399,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 

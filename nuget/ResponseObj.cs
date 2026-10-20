@@ -41,6 +41,9 @@ namespace APIVerve.API.IFSCLookup
         [JsonProperty("branch")]
         public string Branch { get; set; }
 
+        [JsonProperty("address")]
+        public string Address { get; set; }
+
         [JsonProperty("contact")]
         public string Contact { get; set; }
 
