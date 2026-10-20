@@ -28,6 +28,7 @@ declare module '@apiverve/ifsclookup' {
       bank:     null | string;
       ifsc:     null | string;
       branch:   null | string;
+      address:  null | string;
       contact:  null | string;
       city:     null | string;
       district: null | string;
