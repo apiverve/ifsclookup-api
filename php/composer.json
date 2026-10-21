@@ -1,7 +1,7 @@
 {
     "name": "apiverve/ifsclookup",
-    "description": "IFSC Lookup is a simple tool for getting information on IFSC codes. It returns information on various IFSC codes.",
-    "version": "1.2.0",
+    "description": "IFSC Lookup is an IFSC code search API that verifies Indian bank branch details from any IFSC code, returning the bank name, branch, street address, and district. It confirms city and state records, while paid plans add transfer modes like NEFT and UPI.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "ifsclookup",
-        "ifsc lookup",
+        "ifsc code api",
         "ifsc lookup api",
-        "ifsc lookup tool",
-        "ifsc lookup software",
-        "ifsc lookup service"
+        "ifsc code search",
+        "ifsc code checker",
+        "indian bank branch finder"
     ],
-    "homepage": "https://apiverve.com/marketplace/ifsclookup?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/ifsclookup?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/ifsclookup",

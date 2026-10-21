@@ -1,6 +1,6 @@
 # IFSC Lookup API - PHP Package
 
-IFSC Lookup is a simple tool for getting information on IFSC codes. It returns information on various IFSC codes.
+IFSC Lookup is an IFSC code search API that verifies Indian bank branch details from any IFSC code, returning the bank name, branch, street address, and district. It confirms city and state records, while paid plans add transfer modes like NEFT and UPI.
 
 ## Installation
 
@@ -72,6 +72,7 @@ $client = new Client(
     "bank": "State Bank of India",
     "ifsc": "SBIN0005943",
     "branch": "KASTURBA GANDHI MARG,NEW DELHI",
+    "address": "23, HIMALAYA HOUSE KASTURBA GANDHI MARG NEW DELHI ,PIN - 110001",
     "contact": "",
     "city": "NEW DELHI",
     "district": "NEW DELHI",
@@ -93,11 +94,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/ifsclookup?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/ifsclookup?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/ifsclookup?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/ifsclookup?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/ifsclookup?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/ifsclookup?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
