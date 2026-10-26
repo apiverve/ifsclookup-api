@@ -73,6 +73,18 @@ namespace APIVerve.API.IFSCLookup
 
         [JsonProperty("swift")]
         public string Swift { get; set; }
+
+        [JsonProperty("centre")]
+        public string Centre { get; set; }
+
+        [JsonProperty("iso3166")]
+        public string Iso3166 { get; set; }
+
+        [JsonProperty("bankcode")]
+        public string Bankcode { get; set; }
+
+        [JsonProperty("branchcode")]
+        public string Branchcode { get; set; }
     }
 
     public partial class Premium
