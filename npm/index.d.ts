@@ -25,20 +25,24 @@ declare module '@apiverve/ifsclookup' {
 
 
   interface IFSCLookupData {
-      bank:     null | string;
-      ifsc:     null | string;
-      branch:   null | string;
-      address:  null | string;
-      contact:  null | string;
-      city:     null | string;
-      district: null | string;
-      state:    null | string;
-      imps:     boolean | null;
-      rtgs:     boolean | null;
-      neft:     boolean | null;
-      upi:      boolean | null;
-      micr:     null | string;
-      swift:    null | string;
+      bank:       null | string;
+      ifsc:       null | string;
+      branch:     null | string;
+      address:    null | string;
+      contact:    null | string;
+      city:       null | string;
+      district:   null | string;
+      state:      null | string;
+      imps:       boolean | null;
+      rtgs:       boolean | null;
+      neft:       boolean | null;
+      upi:        boolean | null;
+      micr:       null | string;
+      swift:      null | string;
+      centre:     null | string;
+      iso3166:    null | string;
+      bankcode:   null | string;
+      branchcode: null | string;
   }
 
   export default class ifsclookupWrapper {

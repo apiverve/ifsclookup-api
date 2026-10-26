@@ -1,6 +1,6 @@
 # IFSC Lookup API
 
-IFSC Lookup is an IFSC code search API that verifies Indian bank branch details from any IFSC code, returning the bank name, branch, street address, and district. It confirms city and state records, while paid plans add transfer modes like NEFT and UPI.
+IFSC Lookup is an IFSC code search API that verifies Indian bank branch details from any IFSC code, returning the bank name, branch, street address, city, district and state, plus the state's ISO code and the bank and branch codes. Paid plans add MICR, SWIFT and the NEFT, RTGS, IMPS and UPI flags.
 
 [![npm version](https://img.shields.io/npm/v/@apiverve/ifsclookup.svg)](https://www.npmjs.com/package/@apiverve/ifsclookup)
 
@@ -132,7 +132,11 @@ async function makeRequest() {
     "neft": true,
     "upi": true,
     "micr": "110002062",
-    "swift": ""
+    "swift": "",
+    "centre": "NEW DELHI",
+    "iso3166": "IN-DL",
+    "bankcode": "SBIN",
+    "branchcode": "005943"
   }
 }
 ```
