@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/ifsclookup",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "IFSC Lookup is an IFSC code search API that verifies Indian bank branch details from any IFSC code, returning the bank name, branch, street address, city, district and state, plus the state's ISO code and the bank and branch codes. Paid plans add MICR, SWIFT and the NEFT, RTGS, IMPS and UPI flags.",
   "main": "index.js",
   "types": "index.d.ts",
