@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// IFSC Lookup API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/ifsclookup?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/ifsclookup?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [ifsc] (required) - The IFSC code to get information about
